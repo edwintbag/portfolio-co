@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wango Edwin Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/article.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <nav id="article-nav">
+            <div class="logo">
+                <img src="logo4.png" alt="Logo">
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#latest-news">Blog</a></li>
+                <li class="dropdown">
+                    <a href="#pages" class="dropdown-toggle">Pages <span class="dropdown-icon">▼</span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="about.html#about">About</a></li>
+                        <li><a href="article1.html">Blog List</a></li>
+                        <li><a href="#404">404</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="#contact">Contact</a></li>
+                <li class="social-icons">
+                    
+                    <a href="#"><i class="fab fa-skype"></i></a>
+                    <a href="https://github.com/edwintbag"><i class="fab fa-github"></i></a>
+                    <a href="https://Twitter.com/edwintbag1"><i class="fab fa-twitter"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+      <div class="article-section">
+
+        <div class="article-info">
+         <h4>WasmGC and the Future of Front-End Java Development</h4>
+         <span class="date">Oct 16, 2024 .
+            10 mins</span>
+            <span class="author" >by Matthew Tyson
+               Contributing writer</span>
+
+        </div>
+
+
+        <div class="articles">
+         <div class="article">
+             <img src="assets/blog1.jpg" alt="News Image 1">
+            
+             <p>WebAssembly’s garbage collection extension makes it easier to run 
+                 languages like Java on the front end. Could it be the start of a new era in 
+                 web development?
+                 </p>
+             <p>
+               WebAssembly’s garbage collection extension makes it easier to run languages like Java on the front end. Could it be the start of a new era in web development?
+               IDC
+               Credit: Aon Khanisorn
+               JavaScript is the clear choice for front-end development today, but there is a longstanding push to be able to use Java on the front end. Among other things, Java brings a vast ecosystem of libraries, frameworks, and application code, which can be exposed via its APIs. Java and languages like it also offer performance optimizations that JavaScript can’t match.
+               
+               Historically, Java’s sophisticated garbage collection algorithm was an obstacle, but Google’s recent push to implement Java’s garbage collection support in Chrome suggests a path forward. The key to it all is WebAssembly’s garbage collection extension, WasmGC.
+               
+               <br><span>Google Sheets and WasmGC</span> <br>
+               One of the great advancements in software development is automatic memory management, otherwise known as garbage collection. In some programming scenarios, it makes sense for a developer to tinker directly with memory, but for safer applications and optimal performance, automating those processes is usually the way to go.
+               
+               Java’s garbage collection algorithm is one of the more sophisticated options available, which is why Google implemented Googe Sheets in Java. Now, Google wants to take things a step further, by embedding Java’s garbage collection support directly in Chrome, as detailed here.
+               
+               The evolution of Google Sheets is an interesting tale of web development history. It started as an online spreadsheet application competing with the likes of Excel, which was an ambitious undertaking. The application was built using a Java back end that did most of the heavy lifting. But after a time, Google modified that work to happen mainly in the browser, using JavaScript.
+               
+               The switch to JavaScript incurred significant performance losses, however, which led to the decision to re-implement Google Sheets in Java. But this time, the implementation is on the front end, using Wasm for native assembly.
+               <br>
+               <span>
+                  Garbage collection in the browser<br>
+               </span> 
+               Wasm is a binary instruction format, a kind of generalized way to describe what a program does at the assembler-instruction level. Once a program is transformed into a Wasm binary, it can be run in a variety of host runtime environments.
+               
+               There are three basic types of host environments (described by the Wasm project as concrete embeddings): JavaScript, web, and WASI (WebAssembly System Interface), the standard system interface for WebAssembly programs. These embeddings map generally to running Wasm inside a JavaScript engine, inside the browser (not necessarily using JavaScript), and in other environments like servers.
+               
+               This is an oversimplification, but what matters for our purposes is that JavaScript already has a garbage collection engine. Implementing a garbage collector inside a platform that has one running raises all kinds of problems and eliminates the performance benefits.
+               
+               What we need is a specification for implementing garbage collection support directly in the browser, where it has access to as much native architecture as possible. This allows us to make optimizations while avoiding conflicts with JavaScript. And that’s where WasmGC comes in.
+               
+               <br><span>The state of browser support for WasmGC</span> <br>
+               The Google Sheets project is working with the Chrome browser, which is implementing the GC extension to Wasm. This is obviously a complex nexus of programming requirements. Garbage collection, although fairly well understood, remains inherently complex. Wasm’s universal binary format is also very complex. Joining the two is tricky, and the work is ongoing.
+               
+               Even with those caveats, it is exciting that Google Sheets is moving to implement major functionality into Chrome’s WasmGC extension. It suggests that developers may be able to use a language like Java, with its full-featured garbage collector, outside of JavaScript sometimes sooner rather than later.
+               
+            <br><span> WasmGC and the emerging GC layer</strong></span><br>
+               The Googe V8 team published a good deep dive on the effort to implement garbage collection in Wasm. The article shows that there are two approaches to incorporating garbage collection in Wasm. The first—the one we’ve usually done in the past—is to port the entire architecture over. In essence, this means you bring your garbage collection infrastructure with you when you implement your application.
+               
+               The approach being offered by the WasmGC extension is newer. The extension provides a generic garbage collection layer that your software can refer to; a kind of garbage collection layer built into WebAssembly.
+               
+               Wasm by itself doesn’t track references to variables and data structures, so the addition of garbage collection also implies introducing new “typed references” into the specification. This effort is happening gradually: recent implementations support garbage collection on “linear” reference types like integers, but complex types like objects and structs have also been added.
+
+             </p>
+         </div>
+        </div>
+      </div>
+   <!-- Reaction Section -->
+<section class="reactions">
+   <div class="reaction-button">
+      <i class="fa-regular fa-thumbs-up"></i>
+     <span>Like</span>
+   </div>
+   <div class="reaction-button">
+      <i class="fa-regular fa-heart"></i>
+     <span>Love</span>
+   </div>
+   <div class="reaction-button">
+      <i class="fa-solid fa-hands-clapping"></i>
+     <span>Clap</span>
+   </div>
+ </section>
+ 
+ <!-- Comment Section -->
+ <section class="comments">
+   <h4>Comments</h4>
+   <div class="comment">
+     <span class="comment-author">Hello...</span>
+     <p>That do you think.</p>
+   </div>
+   <!--comments-->
+   <form class="comment-form">
+     <textarea placeholder="Add a comment..."></textarea>
+     <button type="submit">Post Comment</button>
+   </form>
+ </section>
+
+ 
+ <!-- Subscription Section -->
+<section class="subscription">
+   <h2>STRAIGHT IN MY MAILBOX</h2>
+   <p>Subscribe To My Newsletter.</p>
+   <form class="subscription-form">
+     <input type="email" placeholder="INFO@EXAMPLE.COM" required>
+     <button type="submit">SUBSCRIBE</button>
+   </form>
+   <p>
+   <a href=" ">Instagram |</a>
+   <a href="https://linkedin.com/in/edwin-wango"> LinkedIn |</a> <br>
+   <a href="#">Behance |</a>
+   <a href="#">Dribbble</a>
+</p>
+ </section>
+ 
+
+   
+    <section class="contact" id="contact">
+      <div class="content-wrapper">
+          <h3>CONTACT US</h3>
+          <h2>Ways To Contact Me</h2>
+          <p class="contact-desc">
+              Whether you have a project in mind, a question, or simply want to connect, 
+              I’d love to hear from you. Reach out using any of the options below,
+               and let’s start a conversation about how I can help bring your vision to life.
+          </p>
+          
+      </div>   
+          <div class="contact-info">
+              <p><i class="fas fa-envelope"></i><span>Email: <a href="wangoedwin@gmail.com">wangoedwin@gmail.com</a></span> </p>
+              <p><i class="fas fa-phone"></i> <span>Phone: +254 743068228</span></p>
+              <p><i class="fa-brands fa-github"></i> <span>Skype: @edwintbag</span> </p>
+              <p><i class="fab fa-twitter"></i> <span>Twitter: @edwintbag1</span></p>
+              <p><i class="fas fa-hashtag"></i> <span>Social Media: @edwintbag</span></p>
+          </div>
+      <!-- Back to Top Button -->
+  <button onclick="scrollToTop()" id="backToTop" title="Go to top">
+      &uarr;
+  </button>
+  </section>
+  
+  <footer>
+      <div class="content-wrapper">
+          <p>&copy; 2024 Wango Edwin | All Rights Reserved</p>
+          <div class="social-icons">
+              <a href="https://Twitter.com/edwintbag1"><i class="fab fa-twitter"></i></a>
+              <a href="https://linkedin.com/in/edwin-wango"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/edwintbag"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+      </div>
+  </footer>
+  </div>
+  
+  
+  <script src="assets/js/articles.js"></script>
+
+  </script>
+</body>
+</html>
