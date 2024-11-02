@@ -1383,7 +1383,12 @@ footer .social-icons a:hover {
 }
 
 /*about*/
+.blog-with-rating img{
+    width: 30%;
+    background-color: gray;
+    border-radius: 7px;
 
+}
 .blog-with-rating {
     padding: 20px;
     background-color: #f4f4f4;
