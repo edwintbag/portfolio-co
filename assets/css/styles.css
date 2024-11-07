@@ -17,7 +17,7 @@ body{
  .container {
     max-width: 1120px;
     width: 90%;
-    margin: 0 auto; /* Center the container */
+    margin: 0 auto;
  }
  
  /* Navigation Bar */
@@ -105,7 +105,7 @@ body{
     width: 100%;
  }
  .nav-links.open {
-    display: block; /* Show menu when .open class is applied */
+    display: block; 
 }
 
  
@@ -122,7 +122,7 @@ body{
     transition: background-color 0.3s ease;
 }
 
-/* Button Hover Effect */
+
 .download-btn:hover {
     background-color: #ffba53;
     color: black;
@@ -132,21 +132,20 @@ body{
     color: #fff;
     text-decoration: none;
 }
-/* Hide dropdown content initially */
-/* Dropdown Styling */
+
 .dropdown-content {
-    display: none; /* Hide dropdown by default */
+    display: none; 
     position: absolute;
     background-color: #333;
     width: 200px;
     list-style: none;
     padding: 10px 0;
-    top: 100%; /* Position below the "Pages" link */
+    top: 100%;
     left: 0;
     z-index: 1;
 }
 
-/* Dropdown Items */
+
 .dropdown-content li a {
     color: #fff;
     padding: 10px 20px;
@@ -160,18 +159,18 @@ body{
     color: #ff9900;
 }
 
-/* Dropdown icon styling */
+
 .dropdown .dropdown-icon {
     margin-left: 5px;
     transition: transform 0.3s ease;
 }
 
-/* Rotate icon when dropdown is active */
+
 .dropdown.active .dropdown-icon {
     transform: rotate(180deg);
 }
 
-/* Show dropdown on active state */
+
 .dropdown.active .dropdown-content {
     display: block;
 }
@@ -202,9 +201,9 @@ body{
 
     /* Adjust dropdown for mobile view */
     .dropdown-content {
-        position: relative; /* Remove absolute positioning on small screens */
-        display: none; /* Hidden by default */
-        width: 100vw;  /* Full width on small screens */
+        position: relative;
+        display: none; 
+        width: 100vw;  
         background-color: #222;
     }
 
@@ -267,7 +266,6 @@ body{
     margin-top: 200px;
  }
  
- /* Hero section layout */
  .hero-left, .hero-center, .hero-right {
     flex: 1;
  }
@@ -391,8 +389,8 @@ body{
        flex-direction: column;
        width: 100%;
        background-color: #333;
-       position: absolute; /* Adjusted to prevent overlap */
-       top: 100px; /* Adjust based on nav height */
+       position: absolute; 
+       top: 100px;
        left: 0;
        
    }
@@ -428,10 +426,10 @@ body{
     }
     
     .hero-left, .hero-center {
-        max-width: 100%; /* Full width for smaller screens */
+        max-width: 100%; 
     }
     .hero-right {
-        display: none; /* Hide on smaller screens */
+        display: none; 
     }
     .hero-center img {
         width: 200px;
@@ -447,10 +445,10 @@ body{
     text-align: center;
  }
  .content-wrapper {
-    max-width: 600px; /* Adjust the width as needed */
-    margin: 0 auto; /* Center the content */
-    padding: 10px; /* Add padding for spacing */
-    text-align: center; /* Optional: Center-align text */
+    max-width: 600px;
+    margin: 0 auto; 
+    padding: 10px;
+    text-align: center; 
 }
  
  .services h3 {
@@ -472,7 +470,7 @@ body{
  
 
 
- /* Service Cards */
+ 
  .service-cards {
     
     display: grid;
@@ -488,11 +486,11 @@ body{
     border-radius: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: color 0.3s;
-    font-size: 1.2rem; /* Increased font size */
+    font-size: 1.2rem; 
  }
  
  .service-card h4 {
-    font-size: 1.5rem; /* Increased size for card titles */
+    font-size: 1.5rem; 
     margin-bottom: 0.5rem;
     color: white;
  }
@@ -535,7 +533,7 @@ body{
     color: #ff9900;
  }
  
- /* Service Stats */
+ 
  .service-stats {
     display: grid;
     gap: 2rem;
@@ -548,31 +546,31 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.5rem; /* Increased font size */
+    font-size: 1.5rem; 
  }
  
  .stat-number {
-    font-size: 2rem; /* Larger size for numbers */
+    font-size: 2rem;
     font-weight: bold;
     color: #ff9900;
     margin-bottom: 0.5rem;
  }
  
  .stat-description {
-    font-size: 1.2rem; /* Adjusted description size */
+    font-size: 1.2rem; 
     color: #fff;
  }
  
- /* Responsive Design */
+ 
  @media (max-width: 768px) {
     .service-cards, .service-stats {
-        grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+        grid-template-columns: repeat(2, 1fr); 
     }
 
 }
 
-/* Experience Cards */
-/* Rating Stars */
+
+
 .rating {
     margin-top: 10px;
 }
@@ -630,7 +628,7 @@ body{
     margin-bottom: 2rem;
     color: #b3b3b3;
  }
-/* Feedback Carousel */
+
 .feedback-carousel {
     
     display: flex;
@@ -674,7 +672,7 @@ border-radius: 50%;
         display: flex;
         flex-direction: row;
         overflow-x: auto;
-        scroll-snap-type: x mandatory; /* Enables smooth snapping */
+        scroll-snap-type: x mandatory; 
         gap: 16px;
         padding: 10px;
         scroll-behavior: smooth;
@@ -711,10 +709,10 @@ border-radius: 50%;
     margin-bottom: 5rem;
 }
 .portfolio .content-wrapper {
-    max-width: 600px; /* Adjust the width as needed */
-    margin: 0 auto; /* Center the content */
-    padding: 10px; /* Add padding for spacing */
-    text-align: center; /* Optional: Center-align text */
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 10px; 
+    text-align: center; 
 }
 
 .portfolio h3 {
@@ -761,7 +759,7 @@ border-radius: 50%;
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns on larger screens */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 .portfolio-item {
@@ -778,7 +776,7 @@ border-radius: 50%;
 .portfolio-item:hover img {
     transform: scale(1.05);
 }
-/* General Adjustments for Smaller Screens */
+
 @media (max-width: 768px) {
     .portfolio h2 {
         font-size: 2em;
@@ -795,15 +793,15 @@ border-radius: 50%;
     }
 }
 
-/* Grid Layout Adjustments for Tablet Screens */
+
 @media (max-width: 768px) {
     .portfolio-grid {
-        grid-template-columns: 1fr; /* 1 column on smaller screens */
+        grid-template-columns: 1fr;
         gap: 10px;
     }
 }
 
-/* Layout and Font Adjustments for Mobile Screens */
+
 @media (max-width: 480px) {
     .portfolio h2 {
         font-size: 1.8em;
@@ -826,29 +824,29 @@ border-radius: 50%;
     }
 
     .portfolio-grid {
-        grid-template-columns: 1fr; /* 1 column on mobile */
+        grid-template-columns: 1fr; 
         gap: 10px;
         padding: 10px;
     }
 }
 
-/* Fine-tuning image hover effect for smaller screens */
+
 @media (hover: none) and (pointer: coarse) {
     .portfolio-item img {
-        transform: none; /* Disable hover effect on touch devices */
+        transform: none;
     }
 }
 
-/* Latest News Section */
+
 .latest-news {
     padding: 50px 20px;
-    background-color: #333; /* Light background for contrast */
+    background-color: #333; 
     text-align: center;
 }
 
-/* Title and Description */
+
 .latest-news h3 {
-    color: #ff9900; /* Accent color */
+    color: #ff9900;
     font-size: 1.0em;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -868,7 +866,6 @@ border-radius: 50%;
     margin: 0 auto 30px;
 }
 
-/* Articles Grid */
 .article {
     position: relative;
     background-color: #333;
@@ -880,7 +877,7 @@ border-radius: 50%;
     transition: transform 0.3s ease;
 }
 
-/* Style for the first two columns */
+
 .articles .article {
     background-color: #2b2b2b;
     border-radius: 0;
@@ -899,7 +896,7 @@ border-radius: 50%;
     cursor: pointer;
 }
 .article img:hover {
-    transform: scale(1.10); /* Slight lift on hover */
+    transform: scale(1.10);
 }
 
 
@@ -935,16 +932,16 @@ border-radius: 50%;
     padding: 1rem 1rem 0px 1rem;
 }
 
-/* Grid layout for large screens */
+
 .articles {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns on larger screens */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     justify-items: center;
     padding: 0 20px;
 }
 
-/* Nested grid for third row with Articles 3 and 4 */
+
 .nested-articles {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -968,10 +965,9 @@ border-radius: 50%;
 
 .articles .article:nth-child(3),
 .articles .article:nth-child(4) {
-    grid-column: 3; /* Place the last two articles in the third column */
+    grid-column: 3; 
 }
 
-/* Grid layout for large screens */
 .articles {
     display: grid;
     grid-template-rows: repeat(3, auto);
@@ -1010,7 +1006,7 @@ border-radius: 50%;
     
 }
 
-/* Reaction Section */
+
 .reactions {
    display: flex;
    align-items: center;
@@ -1046,7 +1042,6 @@ border-radius: 50%;
    transform: scale(1.05);
 }
 
-/* Comment Section */
 .comments {
    margin: 0 auto;
    max-width: 600px;
@@ -1106,7 +1101,7 @@ border-radius: 50%;
    background-color: #ff7700;
 }
 
-/* Subscription Section */
+
 .subscription {
    padding: 30px;
    background-color: #333;
@@ -1176,7 +1171,7 @@ border-radius: 50%;
    color: black;
 }
 
-/* Social Links */
+
 .subscription p a {
    color:  #fff;
    text-decoration: none;
@@ -1193,7 +1188,7 @@ border-radius: 50%;
 
 
 
-/* General Styles */
+
 * {
     box-sizing: border-box;
 }
@@ -1204,7 +1199,7 @@ body {
     padding: 0;
 }
 
-/* Contact Section */
+
 .contact {
     background-color: #333;
     color: #fff;
@@ -1232,7 +1227,7 @@ body {
     color: #b3b3b3;
 }
 
-/* Contact Info */
+
 .contact-info {
     display: grid;
     gap: 10px;
@@ -1257,7 +1252,7 @@ body {
     padding-right: 1rem;
 
 }
-/* Styling for the spans in contact info */
+
 .contact-info span {
     
     font: 2rem;
@@ -1277,17 +1272,17 @@ body {
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color: #ff9900; /* underline color */
+    background-color: #ff9900;
     transition: width 0.3s ease;
 }
 
-/* On hover, underline appears */
+
 .contact-info span:hover::after {
     width: 100%;
 }
 
 .contact-info span:hover {
-    color: #ff9900; /* Optional: change text color on hover */
+    color: #ff9900; 
 }
 
 
@@ -1470,7 +1465,7 @@ footer .social-icons a:hover {
 }
 .experience, .education {
     margin-bottom: 40px;
-    width: 100%; /* Optional: Limit width for centering on larger screens */
+    width: 100%; 
     
     align-items: center;
     display: flex;

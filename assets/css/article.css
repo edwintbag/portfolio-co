@@ -3,6 +3,7 @@
 
 
 /* General Reset */
+
 * {
    margin: 0;
    padding: 0;
@@ -20,7 +21,7 @@ html {
 .container {
    max-width: 1120px;
    width: 90%;
-   margin: 0 auto; /* Center the container */
+   margin: 0 auto; 
 }
 
 .logo {
@@ -73,7 +74,7 @@ html {
 
 /* Shift article-section down when menu is active */
 .menu-active .article-section {
-   transform: translateY(100px); /* Adjust to preferred shift */
+   transform: translateY(100px);
    transition: transform 0.3s ease;
 }
 .nav-links li {
@@ -103,14 +104,14 @@ html {
    width: 100%;
 }
 .nav-links.open {
-   display: block; /* Show menu when .open class is applied */
+   display: block; 
 }
 .article-hero.shift-down {
-   transform: translateY(50px); /* Adjust the value as needed */
+   transform: translateY(50px);
    transition: transform 0.3s ease;
 }
 .article-hero.shift-down .nav-links {
-   display: block; /* Show when shifted */
+   display: block; 
 }
 
 
@@ -129,7 +130,6 @@ html {
    z-index: 1;
 }
 
-/* Dropdown Items */
 .dropdown-content li a {
    color: #fff;
    padding: 10px 20px;
@@ -143,18 +143,17 @@ html {
    color: #ff9900;
 }
 
-/* Dropdown icon styling */
+
 .dropdown .dropdown-icon {
    margin-left: 5px;
    transition: transform 0.3s ease;
 }
 
-/* Rotate icon when dropdown is active */
+
 .dropdown.active .dropdown-icon {
    transform: rotate(180deg);
 }
 
-/* Show dropdown on active state */
 .dropdown.active .dropdown-content {
    display: block;
 }
@@ -162,7 +161,7 @@ html {
 .dropdown-content.show {
    display: block;
 }
-/* Responsive Design for Small Screens */
+
 @media (max-width: 768px) {
    .nav-links {
       display: flex;
@@ -338,7 +337,7 @@ html {
 }
 
 .article-hero.shift-down {
-   transform: translateY(50px); /* Adjust the value as needed */
+   transform: translateY(50px); 
    transition: transform 0.3s ease;
 }
 
@@ -364,7 +363,7 @@ html {
        background-color: transparent;
    }
    .nav-links.active {
-      display: flex; /* Show nav-links when active */
+      display: flex; 
   }
 }
 
@@ -434,31 +433,8 @@ html {
    transition: margin-top 0.3s ease;
    padding: 20px;
    background-color: #333;
-   
-  
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* General Reset */
-* {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   font-family: Arial, sans-serif;
-}
-
 /* Reaction Section */
 .reactions {
    display: flex;
@@ -643,10 +619,6 @@ html {
 
 
 
-/* General Styles */
-* {
-   box-sizing: border-box;
-}
 
 body {
    font-family: Arial, sans-serif;
@@ -727,17 +699,16 @@ body {
    bottom: 0;
    width: 0;
    height: 2px;
-   background-color: #ff9900; /* underline color */
+   background-color: #ff9900; 
    transition: width 0.3s ease;
 }
 
-/* On hover, underline appears */
 .contact-info span:hover::after {
    width: 100%;
 }
 
 .contact-info span:hover {
-   color: #ff9900; /* Optional: change text color on hover */
+   color: #ff9900; 
 }
 
 
