@@ -1183,10 +1183,15 @@ border-radius: 50%;
 .subscription p a:hover {
    color: #ff9900;
 }
+@media (max-width: 480px) {
 
+    .subscription p a {
 
+    font-size: 0.8rem;  
 
+    }
 
+}
 
 
 * {
